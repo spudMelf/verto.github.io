@@ -242,6 +242,52 @@ header{
 	width: 130px;
 }
 
+#reciprocal_templates p {
+	background-color: #feb633;
+}
+
+#reciprocal_template {
+		background-color: #feb633 !important;
+		width: 110px;
+		height: 18px;
+		padding: 14px;
+		border-style: solid;
+		border-width: thin;
+	  border-radius: 20px;
+}
+#reciprocal_template_text{
+	background-color: #feb633 !important;
+	width: 110px;
+	position: relative;
+	top: -10px;
+}
+
+#reciprocal_template span {
+
+	background-color: #feb633;
+}
+
+#square_root_templates p, span {
+	background-color: #deea1f;
+}
+
+#trig_templates p {
+	width: 120px;
+	background-color: #9f18fd;
+}
+
+#exponential_templates p {
+	width: 90px;
+	background-color: #03fed1;
+}
+
+#logarithmic_templates p {
+	background-color: #fd2190;
+}
+
+#absolute_value_templates p {
+	background-color: #242424;
+}
 #template_blocks sup {
 	background-color: inherit;
 }
@@ -310,14 +356,7 @@ input[type=number] {
 	color: #7b788e;
 }
 
-#equations_button {
-	overflow: visible;
 
-}
-
-#additions_button {
-	overflow: visible;
-}
 
 #graph_wrapper {
 	height: 75%;
@@ -345,16 +384,29 @@ input[type=number] {
 	background-color: rgba(255, 255, 255, 0.0);
 }
 
-.fraction, .top, .bottom {
-    padding: 0 5px;
-}
+.frac{
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            letter-spacing: 0.001em;
+            text-align: center;
+        }
 
-.fraction {
-    display: inline-block;
-    text-align: center;
-}
+        .frac > span {
+            display: block;
+            padding: 0.1em;
+						background-color: inherit;
+        }
 
-.bottom{
-    border-top: 1px solid #000;
-    display: block;
+        .frac span.bottom{
+            border-top: thin solid white;
+        }
+
+        .frac span.symbol {
+            display: none;
+        }
+#square_root_span {
+	border-top-style: solid;
+	border-width: 1px;
+	border-color: white;
 }
