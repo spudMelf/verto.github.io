@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+	<title>Graphr - The JavaScript Graphing Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="jsgcalc.css" />
+
+	<script type="text/javascript" src="http://www.yerich.net/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/1.3.0/math.min.js"></script>
+	<script type="text/javascript" src="calc.js"></script>
+	<script type="text/javascript" src="jsgcalc.js"></script>
+	<script type="text/javascript" src="jsgui.js"></script>
+</head>
+
+<body>
+<div id="everything">
+<header></header>
+<div id="sidewrapper">
+	<div id="functions_section">
+		<p id="functions_header">Functions</p>
+		<div id="functions">
+
+			<div id="linear" class="function_div">
+				<a id="linear_link" href="#linear_templates">
+					<img src="images/linear.png">
+					<p>Linear</p>
+				</a>
+			</div>
+
+			<div id="quadratic" class="function_div">
+				<a id="quadratic_link" href="#quadratic_templates">
+					<img src="images/quadratic.png">
+					<p>Quadratic</p>
+				</a>
+			</div>
+
+			<div id="cubic" class="function_div">
+				<a id="cubic_link" href="#cubic_templates">
+					<img src="images/cubic.png">
+					<p>Cubic</p>
+				</a>
+			</div>
+
+			<div id="reciprocal" class="function_div">
+				<a id="reciprocal_link" href="#reciprocal_templates">
+					<img src="images/reciprocal.png">
+					<p>Reciprocal</p>
+				</a>
+			</div>
+
+			<div id="square_root" class="function_div">
+				<a id="square_root_link" href="#square_root_templates">
+					<img src="images/square_root.png">
+					<p>Square Root</p>
+				</a>
+			</div>
+
+			<div id="trig" class="function_div">
+				<a id="trig_link" href="#trig_templates">
+					<img src="images/trig.png">
+					<p>Trigonometric</p>
+				</a>
+			</div>
+
+			<div id="exponential" class="function_div">
+				<a id="exponential_link" href="#exponential_templates">
+					<img src="images/exponential.png">
+					<p>Exponential</p>
+				</a>
+			</div>
+
+			<div id="natural_log" class="function_div">
+				<a id="natural_log_link" href="#natural_log_templates">
+					<img src="images/natural_log.png">
+					<p>Natural Log</p>
+				</a>
+			</div>
+
+			<div id="absolute_value" class="function_div">
+				<a id="absolute_value_link" href="#absolute_value_templates">
+					<img src="images/absolute_value.png">
+					<p>Absolute Value</p>
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="templates_section">
+		<p id="template_header">Templates</p>
+		<div id="template_blocks">
+			<div id="linear_templates">
+				<h1 style="padding-top: 0">Linear</h1>
+					<p onclick="defineLinear(0)">y = mx + b</p>
+					<p onclick="defineLinear(1)">y - b = m(x - a)</p>
+			</div>
+
+			<div id="quadratic_templates">
+				<h1>Quadratic</h1>
+				<p onclick="defineQuadratic(0)">y = ax<sup>2</sup> + bx + c</p>
+				<p onclick="defineQuadratic(1)">y = (x + c)(x + d)</p>
+				<p onclick="defineQuadratic(2)">y = a(x - h)<sup>2</sup> + k</p>
+			</div>
+
+			<div id="cubic_templates">
+				<h1>Cubic</h1>
+				<p onclick="defineCubic(0)">y = ax<sup>3</sup> + bx<sup>2</sup> + cx + d</p>
+				<p onclick="defineCubic(1)">y = a(x + i)(x + j)(x + k)</p>
+		</div>
+
+		
+	</div>
+
+	<div id="playground_section">
+		<p id="playground_header">Playground</p>
+		<div id="user_area">
+		</div>
+
+	</div>
+
+<div id="graph_wrapper">
+	<canvas id="graph">Sorry, your browser does not support this application. The following browsers are supported:<br /><br />
+	<a href="http://www.google.com/chrome/">Google Chrome</a><br /><a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br />
+	<a href="http://www.opera.com/">Opera</a></canvas>
+</div>
+
+</div>
+
+
+</body>
+
+</html>
