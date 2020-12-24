@@ -213,6 +213,7 @@ $('.pow').css('color', 'white');
 $('.linear_function').css('position', 'absolute');
 $('.linear_function_header').css('padding', '0');
 $('.linear_function_header').css('margin', '0');
+$('.linear_function:hover').css('cursor','grab');
 
 $('.linear_function').css('border-radius', '20px')
 $('.linear_function').css('height', '18px');
