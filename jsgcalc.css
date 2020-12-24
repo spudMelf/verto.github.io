@@ -3,6 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
 @import url(https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap);
 
+
 *{
 	background-color: #e5f0ff;
 	border-color: #cbd5e2;
@@ -24,15 +25,26 @@ body {
 
 header{
 	width: 100%;
-	height: 8%;
-	background-color: #4d97ff;
+	height: 50px;
+	background-color: #109c31;
 
 	position: absolute;
 	top: 0;
 	left: 0px;
 
+	font-family: sans-serif;
 
+	z-index: 20;
+}
 
+header h1 {
+	background-color: inherit;
+	width: 99%;
+	text-align: center;
+	color: white;
+	font-size: 250%;
+	position: absolute;
+	top: -10px;
 }
 
 .power {
@@ -43,9 +55,8 @@ header{
 	width: 30px;
 }
 
-#sidewrapper {
 
-}
+
 
 #graph {
 	width: 100%;
@@ -55,7 +66,16 @@ header{
 	min-width: 1056;
 }
 
+#functions_section {
 
+	width: 7%;
+	position: absolute;
+	left: 0;
+	top:14%;
+	height: 80%;
+	padding: 0;
+	margin: 0;
+}
 
 #functions {
 	background-color: #f9f9f9;
@@ -63,24 +83,24 @@ header{
 	margin: 0;
 	padding: 5px;
 
-	width: 7%;
-	height: 80%;
+	width: 100%;
+	height: 100%;
 
 	position: absolute;
-	left: 0;
-	top: 14%;
+	top: -0px;
+
 
 	border-style: solid;
 	border-width: thin;
 
 	z-index: 1;
 
-	min-width: 	70px;
+	overflow: hidden;
 
 }
 
 #functions_header{
-	width: 5%;
+	width: 70px;
 	padding: 10px;
 	font-family: sans-serif;
 	font-size: 110%;
@@ -89,16 +109,16 @@ header{
 	border-width: thin;
 	border-radius: 5px;
 
-	position: absolute;
-	top: 7%;
-	left: 0;
+	position: relative;
+	top: -45px;
+	left: 0px;
 
 	background-color: #f9f9f9;
 }
 
 #functions img {
-	width: 30px;
-	height: 30px;
+	width: 40%;
+	height: 40%;
 	background-color: #f9f9f9;
 	border-radius: 2px;
 
@@ -114,7 +134,7 @@ header{
 	text-align: center;
 	padding: 0;
 	margin: 0 auto;
-
+	padding-top: 2px;
 	color: #7b788e;
 
 }
@@ -145,7 +165,14 @@ header{
 	padding-bottom: 5px;
 }
 
+#templates_section {
+	width: 15%;
+	height: 80%;
+	position: absolute;
+	left: 7.6%;
+	top: 14%;
 
+}
 
 #template_blocks {
 	background-color: #f9f9f9;
@@ -153,17 +180,17 @@ header{
 	margin: 0;
 	padding: 5px;
 
-	width: 15%;
-	height: 80%;
+	width: 100%;
+	height: 100%;
 
 	position: absolute;
-	left: 7.9%;
-	top: 14%;
+	top: 0px;
+	left: 0px;
 
 	border-style: solid;
 	border-width: thin;
 
-	min-width: 120px;
+
 
 	overflow-y: scroll;
 
@@ -186,7 +213,7 @@ header{
 }
 
 #template_header{
-	width: 5%;
+	width: 70px;
 	padding: 10px;
 	font-family: sans-serif;
 	font-size: 110%;
@@ -196,8 +223,8 @@ header{
 	border-radius: 5px;
 
 	position: relative;
-	left: 100.5px;
-	top: 42px;
+		left: 0px;
+		top: -45px;
 
 	background-color: #f9f9f9;
 
@@ -308,6 +335,14 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+#playground_section {
+	width: 20%;
+	height: 80%;
+	position: absolute;
+	left: 22.1%;
+	top: 14%;
+
+}
 
 #user_area {
 	background-color: #f9f9f9;
@@ -315,22 +350,22 @@ input[type=number] {
 	margin: 0;
 	padding: 5px;
 
-	width: 20%;
-	height: 80%;
+	width: 100%;
+	height: 100%;
 
 	position: absolute;
-	left: 22.1%;
-	top: 14%;
+	left: 0px;
+	top: 0px;
 
 	border-style: solid;
 	border-width: thin;
 
-	min-width: 250px;
+	overflow: hidden;
 
 }
 
 #playground_header{
-	width: 5%;
+	width: 70px;
 	padding: 10px;
 	font-family: sans-serif;
 	font-size: 110%;
@@ -340,8 +375,8 @@ input[type=number] {
 	border-radius: 5px;
 
 	position: relative;
-	top: -10px;
-	left: 282.5px;
+	top: -45px;
+	left: 0px;
 
 	background-color: #f9f9f9;
 }
@@ -354,6 +389,9 @@ input[type=number] {
 	font-size: 105%;
   text-align: center;
 	color: #7b788e;
+	min-width: 430px;
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -373,9 +411,8 @@ input[type=number] {
 	border-color: #cbd5e2;
 	border-radius: 1%;
 
-	min-width: 700px;
-	min-height: 460px;
-
+	min-width: 520px;
+	min-height: 350px;
 }
 
 
