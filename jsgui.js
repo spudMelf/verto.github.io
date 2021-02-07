@@ -75,8 +75,9 @@ function Quadratic() {
      $('.coefficient').css('background-color', 'white');
      $('.coefficient').css('text-align', 'right');
      $('.coefficient').css('border-radius', '5px');
-     $('.quadratic_equation').css('width', '150px');
+     $('.quadratic_equation').css('width', 'auto');
      $('.quadratic_equation').css('position', 'absolute');
+     $('.quadratic_equation').css('margin-left', '15%');
      $('.quadratic_equation').css('z-index', '3');
      $('.quadratic_function_header').css('z-index',' 1');
 
@@ -235,8 +236,10 @@ $('.coefficient').css('color', 'black');
 $('.coefficient').css('background-color', 'white');
 $('.coefficient').css('text-align', 'right');
 $('.coefficient').css('border-radius', '5px');
-$('.linear_equation').css('width', '150px');
+$('.linear_equation').css('width', 'auto');
 $('.linear_equation').css('position', 'absolute');
+$('.linear_equation').css('margin-left', '15%');
+$('#linear_equation').css('margin-left', '20%')
 $('.linear_equation').css('z-index', '3');
 $('.linear_function_header').css('z-index',' 1');
 
@@ -335,7 +338,7 @@ function Cubic() {
    //init boxes on screen
    this.init = function(num) {
      if(num == 0){
-       $('#user_area').append('<div id="cubic'+cbjack+'"class="cubic_function"><div id="cubic'+cbjack+'header" class="cubic_function_header"></div><div id="cubic_equation" class="cubic_equation">'
+       $('#user_area').append('<div id="cubic'+cbjack+'"class="cubic_function"><div id="cubic'+cbjack+'header" class="cubic_function_header"></div><div class="cubic_equation">'
        +'<p class="pow">y = </p><input type="number" value="1" id="a_cubic0_'+cbjack+'" class="coefficient" oninput="cubicArray['+cbjack+'].update('+ cbjack +','+num+')">'
        +'<p class="pow"> x<sup>3</sup> + </p><input type="number" value="0" id="b_cubic0_'+cbjack+'" class="coefficient" oninput="cubicArray['+cbjack+'].update('+ cbjack +','+num+')">'
        +'<p class="pow"> x<sup>2</sup> + </p><input type="number" value="0" id="c_cubic0_'+cbjack+'" class="coefficient" oninput="cubicArray['+cbjack+'].update('+ cbjack +','+num+')">'
@@ -386,9 +389,11 @@ function Cubic() {
      $('.coefficient').css('background-color', 'white');
      $('.coefficient').css('text-align', 'right');
      $('.coefficient').css('border-radius', '5px');
-     $('.cubic_equation').css('width', '200px');
+     $('.cubic_equation').css('width', 'auto');
      $('.cubic_equation').css('position', 'absolute');
      $('.cubic_equation').css('z-index', '3');
+     $('.cubic_equation').css('margin-left', '10%');
+     $('#cubic_equation').css('margin-left', '5%')
      $('.cubic_function_header').css('z-index',' 1');
 
      //change this for function
@@ -528,9 +533,10 @@ function SquareRoot() {
    $('.coefficient').css('background-color', 'white');
    $('.coefficient').css('text-align', 'right');
    $('.coefficient').css('border-radius', '5px');
-   $('.squareRoot_equation').css('width', '150px');
+   $('.squareRoot_equation').css('width', 'auto');
    $('.squareRoot_equation').css('position', 'absolute');
    $('.squareRoot_equation').css('z-index', '3');
+   $('.squareRoot_equation').css('margin-left', '12%')
    $('.squareRoot_function_header').css('z-index',' 1');
 
    //change this for function
@@ -652,13 +658,15 @@ function Reciprocal() {
      $('.coefficient').css('background-color', 'white');
      $('.coefficient').css('text-align', 'right');
      $('.coefficient').css('border-radius', '5px');
-     $('.reciprocal_equation').css('width', '150px');
+     $('.reciprocal_equation').css('width', 'auto');
      $('.reciprocal_equation').css('position', 'absolute');
      $('.reciprocal_equation').css('z-index', '3');
      $('.reciprocal_function_header').css('z-index',' 1');
+     $('.reciprocal_equation').css('margin-left', '18%');
+     $('.reciprocal_equation').css('top', '3%')
 
-     $('.reciprocal_equation').css('position', 'relative');
-     $('.reciprocal_equation').css('top', '-10px');
+    // $('.reciprocal_equation').css('position', 'relative');
+    // $('.reciprocal_equation').css('top', '-10px');
 
      //change this for function
 
@@ -790,8 +798,9 @@ function Trig(num) {
      $('.coefficient').css('background-color', 'white');
      $('.coefficient').css('text-align', 'right');
      $('.coefficient').css('border-radius', '5px');
-     $('.trig_equation').css('width', '150px');
+     $('.trig_equation').css('width', 'auto');
      $('.trig_equation').css('position', 'absolute');
+     $('.trig_equation').css('margin-left', '2%');
      $('.trig_equation').css('z-index', '3');
      $('.trig_function_header').css('z-index',' 1');
 
@@ -933,8 +942,9 @@ function Exponential() {
      $('.coefficient').css('background-color', 'white');
      $('.coefficient').css('text-align', 'right');
      $('.coefficient').css('border-radius', '5px');
-     $('.exponential_equation').css('width', '120px');
+     $('.exponential_equation').css('width', 'auto');
      $('.exponential_equation').css('position', 'absolute');
+     $('.exponential_equation').css('margin-left', '10%')
      $('.exponential_equation').css('z-index', '3');
      $('.exponential_function_header').css('z-index',' 1');
 
@@ -1068,8 +1078,9 @@ function Logarithmic() {
      $('.coefficient').css('background-color', 'white');
      $('.coefficient').css('text-align', 'right');
      $('.coefficient').css('border-radius', '5px');
-     $('.logarithmic_equation').css('width', '150px');
+     $('.logarithmic_equation').css('width', 'auto');
      $('.logarithmic_equation').css('position', 'absolute');
+     $('.logarithmic_equation').css('margin-left', '10%')
      $('.logarithmic_equation').css('z-index', '3');
      $('.logarithmic_function_header').css('z-index',' 1');
 
@@ -1202,8 +1213,9 @@ function AbsoluteValue() {
      $('.coefficient').css('background-color', 'white');
      $('.coefficient').css('text-align', 'right');
      $('.coefficient').css('border-radius', '5px');
-     $('.absoluteValue_equation').css('width', '150px');
+     $('.absoluteValue_equation').css('width', 'auto');
      $('.absoluteValue_equation').css('position', 'absolute');
+     $('.absoluteValue_equation').css('margin-left', '12%')
      $('.absoluteValue_equation').css('z-index', '3');
      $('.absoluteValue_function_header').css('z-index',' 1');
 
