@@ -1,12 +1,12 @@
-# Graphr, the JavaScript Graphing Calculator
-By Richard Ye - http://www.yerich.net/
+# Verto: An Educational Graphing Tool
+https://spudmelf.github.io/verto.github.io/
 
-This is a JavaScript implementation of a graphical calculator, with support for
-standard algebraic functions in the Cartesian plane. Features include fast, accurate
-graphing and full mouse zoom and pan support. Additionally, there are many graphing
-tools available, such as tracing a function, finding a root, finding the derivative, etc.
+Verto is an interactive graphing tool designed to teach 
+people about graphical transformations for common functions 
+they are likely to encounter in algebra and calculus classes.
+Verto's Scratch like UI was inspired by my own experiences teaching CS;
+I noticed student engagement was significantly higher when using Scratch,
+and I sought to emulate that engagement.  
 
-Designed for demonstration purposes only - https://www.desmos.com/calculator is a better
-calculator for real mathematics.
-
-Check out the web-based demo at http://www.graphr.org/
+The backbone of Scratch's graphing system is borrowed from Ricahrd Ye's graphr website.
+https://www.yerich.net/
